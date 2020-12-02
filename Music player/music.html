@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #74ABE2, #5563DE);
+}
+
+/* Style the header */
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 68%;
+  border: 2px solid black;
+  margin: 1%;
+  border-radius: 7px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 30%;
+  border: 2px solid black;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.blocks{
+	width: 99%;
+  border: 2px solid black;
+  margin: 1%;
+  border-radius: 7px;
+}
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+.left-panel{
+    height: auto;
+    width: 98%;
+    border: 3px solid black;
+    position: relative;
+  }
+
+  #rcorners2 {
+    
+    height: 5rem;
+    width: 5rem;
+    
+    display:  inline-block;
+  }
+
+  #rcorners2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: inline;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side1</h2>
+      <p>Lorem ipsum dolor sit amet, consecesize the browser window to see the responsive efetur adipiscing elit..</p>
+      <div class="blocks">
+        <h2>Side2</h2>
+        <p>Lorem ipsum dolor sit amet, consecesize the browser window to see the responsive efetur adipiscing elit..</p>
+      </div>
+      <div class="blocks">
+        
+        <ul class="left-panel">
+           <li><div id="rcorners2"><img src="ehe0afnpx6c11.jpg"><h3>Artist image</h3></div></li>
+           <li><div id="rcorners2"><img src="ehe0afnpx6c11.jpg"><h3>Artist image</h3></div></li>
+           <li><div id="rcorners2"><img src="ehe0afnpx6c11.jpg"><h3>Artist image</h3></div></li>
+           <li><div id="rcorners2"><img src="ehe0afnpx6c11.jpg"><h3>Artist image</h3></div></li>
+           
+            
+        </ul>
+    </div>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <div class="blocks">
+        <h2>Side1</h2>
+        <p>Lorem ipsum dolor sit amet, consecesize the browser window to see the responsive efetur adipiscing elit..</p>
+      </div>
+
+</div>
+  
+  
+</div>
+  
+</body>
+</html>
